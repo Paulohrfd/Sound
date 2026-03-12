@@ -1080,6 +1080,9 @@ function renderWinnerScreen() {
   return `
     <div class="winner-screen">
       <p class="winner-title">CAMPEÃ DA SUA COPA</p>
+      <button onclick="compartilharCampea()" class="main-btn">
+Compartilhar minha campeã
+</button>
       <h2 class="winner-song">${champion.title}</h2>
       <p class="winner-artist">${champion.artist}</p>
 
@@ -1175,3 +1178,17 @@ function render() {
 
 render();
 
+function compartilharCampea() {
+
+  const card = document.querySelector(".winner-screen");
+
+  html2canvas(card).then(canvas => {
+
+    const link = document.createElement("a");
+    link.download = "soundclash-campea.png";
+    link.href = canvas.toDataURL();
+    link.click();
+
+  });
+
+}
