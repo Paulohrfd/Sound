@@ -1,4 +1,3 @@
-function startGame(){
-document.getElementById("game").innerHTML =
-"<h2>Escolha uma música</h2>";
+function startGame() {
+  document.getElementById("game").innerHTML = "<h2>Funcionou</h2>";
 }
