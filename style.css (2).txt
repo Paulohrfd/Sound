@@ -1,0 +1,21 @@
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+text-align:center;
+margin-top:120px;
+}
+
+button{
+background:#7c3aed;
+color:white;
+border:none;
+padding:20px 40px;
+font-size:20px;
+border-radius:15px;
+cursor:pointer;
+}
+
+button:hover{
+background:#6d28d9;
+}
