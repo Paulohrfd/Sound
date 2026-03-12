@@ -160,392 +160,156 @@ const tracks = [
     embed: "https://open.spotify.com/embed/track/6GmHnXy1p9N0UEhoJaMItZ"
   },
   {
+    title: "Viva La Vida",
+    artist: "Coldplay",
+    embed: "https://open.spotify.com/embed/track/1mea3bSkSGXuIRvnydlB5b"
+  },
+  {
+    title: "The Scientist",
+    artist: "Coldplay",
+    embed: "https://open.spotify.com/embed/track/75JFxkI2RXiU7L9VXzMkle"
+  },
+  {
+    title: "Yellow",
+    artist: "Coldplay",
+    embed: "https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg"
+  },
+  {
+    title: "Numb",
+    artist: "Linkin Park",
+    embed: "https://open.spotify.com/embed/track/2nLtzopw4rPReszdYBJU6h"
+  },
+  {
+    title: "In The End",
+    artist: "Linkin Park",
+    embed: "https://open.spotify.com/embed/track/60a0Rd6pjrkxjPbaKzXjfq"
+  },
+  {
+    title: "Wake Me Up",
+    artist: "Avicii",
+    embed: "https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2"
+  },
+  {
+    title: "Closer",
+    artist: "The Chainsmokers",
+    embed: "https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw"
+  },
+  {
+    title: "Happier",
+    artist: "Marshmello",
+    embed: "https://open.spotify.com/embed/track/7BqBn9nzAq8spo5e7cZ0dJ"
+  },
+  {
+    title: "Sunflower",
+    artist: "Post Malone",
+    embed: "https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P"
+  },
+  {
+    title: "Rockstar",
+    artist: "Post Malone",
+    embed: "https://open.spotify.com/embed/track/7wGoVu4Dady5GV0Sv4UIsx"
+  },
+  {
+    title: "Circles",
+    artist: "Post Malone",
+    embed: "https://open.spotify.com/embed/track/21jGcNKet2qwijlDFuPiPb"
+  },
+  {
+    title: "Bad Guy",
+    artist: "Billie Eilish",
+    embed: "https://open.spotify.com/embed/track/2Fxmhks0bxGSBdJ92vM42m"
+  },
+  {
+    title: "Lovely",
+    artist: "Billie Eilish",
+    embed: "https://open.spotify.com/embed/track/0u2P5u6lvoDfwTYjAADbn4"
+  },
+  {
+    title: "Hello",
+    artist: "Adele",
+    embed: "https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
+  },
+  {
+    title: "Rolling In The Deep",
+    artist: "Adele",
+    embed: "https://open.spotify.com/embed/track/1c8gk2PeTE04A1pIDH9YMk"
+  },
+  {
+    title: "Poker Face",
+    artist: "Lady Gaga",
+    embed: "https://open.spotify.com/embed/track/6wVWJl64yoTzU27EI8ep20"
+  },
+  {
+    title: "Bad Romance",
+    artist: "Lady Gaga",
+    embed: "https://open.spotify.com/embed/track/0SiywuOBRcynK0uKGWdCnn"
+  },
+  {
+    title: "Shallow",
+    artist: "Lady Gaga",
+    embed: "https://open.spotify.com/embed/track/2VxeLyX666F8uXCJ0dZF8B"
+  },
+  {
+    title: "Firework",
+    artist: "Katy Perry",
+    embed: "https://open.spotify.com/embed/track/4lCv7b86sLynZbXhfScfm2"
+  },
+  {
+    title: "Roar",
+    artist: "Katy Perry",
+    embed: "https://open.spotify.com/embed/track/27tNWlhdAryQY04Gb2ZhUI"
+  },
+  {
+    title: "Dark Horse",
+    artist: "Katy Perry",
+    embed: "https://open.spotify.com/embed/track/5jrdCoLpJSvHHorevXBATy"
+  },
+  {
+    title: "Havana",
+    artist: "Camila Cabello",
+    embed: "https://open.spotify.com/embed/track/1rfofaqEpACxVEHIZBJe6W"
+  },
+  {
+    title: "Señorita",
+    artist: "Shawn Mendes",
+    embed: "https://open.spotify.com/embed/track/0TK2YIli7K1leLovkQiNik"
+  },
+  {
+    title: "Stitches",
+    artist: "Shawn Mendes",
+    embed: "https://open.spotify.com/embed/track/5jsw9uXEGuKyJzs0boZ1bT"
+  },
+  {
+    title: "Take Me To Church",
+    artist: "Hozier",
+    embed: "https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
+  },
+  {
+    title: "Stressed Out",
+    artist: "Twenty One Pilots",
+    embed: "https://open.spotify.com/embed/track/3CRDbSIZ4r5MsZ0YwxuEkn"
+  },
+  {
+    title: "Ride",
+    artist: "Twenty One Pilots",
+    embed: "https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW"
+  },
+  {
+    title: "Heathens",
+    artist: "Twenty One Pilots",
+    embed: "https://open.spotify.com/embed/track/6i0V12jOa3mr6uu4WYhUBr"
+  },
+  {
+    title: "Thinking Out Loud",
+    artist: "Ed Sheeran",
+    embed: "https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f"
+  },
+  {
+    title: "Love Yourself",
+    artist: "Justin Bieber",
+    embed: "https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0"
+  },
 
-  
-title:"Viva La Vida",
-artist:"Coldplay",
-embed:"https://open.spotify.com/embed/track/1mea3bSkSGXuIRvnydlB5b"
-},
-
-{
-title:"The Scientist",
-artist:"Coldplay",
-embed:"https://open.spotify.com/embed/track/75JFxkI2RXiU7L9VXzMkle"
-},
-
-{
-title:"Yellow",
-artist:"Coldplay",
-embed:"https://open.spotify.com/embed/track/3AJwUDP919kvQ9QcozQPxg"
-},
-
-{
-title:"Numb",
-artist:"Linkin Park",
-embed:"https://open.spotify.com/embed/track/2nLtzopw4rPReszdYBJU6h"
-},
-
-{
-title:"In The End",
-artist:"Linkin Park",
-embed:"https://open.spotify.com/embed/track/60a0Rd6pjrkxjPbaKzXjfq"
-},
-
-{
-title:"Faded",
-artist:"Alan Walker",
-embed:"https://open.spotify.com/embed/track/698ItKASDavgwZ3WjaWjtz"
-},
-
-{
-title:"Animals",
-artist:"Martin Garrix",
-embed:"https://open.spotify.com/embed/track/6Jv5y6xv9mZzZJ8U5zq4xF"
-},
-
-{
-title:"Wake Me Up",
-artist:"Avicii",
-embed:"https://open.spotify.com/embed/track/0nrRP2bk19rLc0orkWPQk2"
-},
-
-{
-title:"Levels",
-artist:"Avicii",
-embed:"https://open.spotify.com/embed/track/6XeXH6QK4uF0yS9z5eO3nT"
-},
-
-{
-title:"Titanium",
-artist:"David Guetta",
-embed:"https://open.spotify.com/embed/track/1VdZ0vKfR5jneCmWIUAMxK"
-},
-
-{
-title:"Lean On",
-artist:"Major Lazer",
-embed:"https://open.spotify.com/embed/track/1Lim1Py7xBgbAkAys3AGAG"
-},
-
-{
-title:"Closer",
-artist:"The Chainsmokers",
-embed:"https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw"
-},
-
-{
-title:"Happier",
-artist:"Marshmello",
-embed:"https://open.spotify.com/embed/track/7BqBn9nzAq8spo5e7cZ0dJ"
-},
-
-{
-title:"Sunflower",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P"
-},
-
-{
-title:"Rockstar",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/7wGoVu4Dady5GV0Sv4UIsx"
-},
-
-{
-title:"Circles",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/21jGcNKet2qwijlDFuPiPb"
-},
-
-{
-title:"Old Town Road",
-artist:"Lil Nas X",
-embed:"https://open.spotify.com/embed/track/2YpeDb67231RjR0MgVLzsG"
-},
-
-{
-title:"Industry Baby",
-artist:"Lil Nas X",
-embed:"https://open.spotify.com/embed/track/27NovPIUIRrOZoCHxABJwK"
-},
-
-{
-title:"Bad Guy",
-artist:"Billie Eilish",
-embed:"https://open.spotify.com/embed/track/2Fxmhks0bxGSBdJ92vM42m"
-},
-
-{
-title:"Lovely",
-artist:"Billie Eilish",
-embed:"https://open.spotify.com/embed/track/0u2P5u6lvoDfwTYjAADbn4"
-},
-
-{
-title:"Hello",
-artist:"Adele",
-embed:"https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
-},
-
-{
-title:"Rolling In The Deep",
-artist:"Adele",
-embed:"https://open.spotify.com/embed/track/1c8gk2PeTE04A1pIDH9YMk"
-},
-
-{
-title:"Someone Like You",
-artist:"Adele",
-embed:"https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
-},
-
-{
-title:"Poker Face",
-artist:"Lady Gaga",
-embed:"https://open.spotify.com/embed/track/6wVWJl64yoTzU27EI8ep20"
-},
-
-{
-title:"Bad Romance",
-artist:"Lady Gaga",
-embed:"https://open.spotify.com/embed/track/0SiywuOBRcynK0uKGWdCnn"
-},
-
-{
-title:"Shallow",
-artist:"Lady Gaga",
-embed:"https://open.spotify.com/embed/track/2VxeLyX666F8uXCJ0dZF8B"
-},
-
-{
-title:"Firework",
-artist:"Katy Perry",
-embed:"https://open.spotify.com/embed/track/4lCv7b86sLynZbXhfScfm2"
-},
-
-{
-title:"Roar",
-artist:"Katy Perry",
-embed:"https://open.spotify.com/embed/track/27tNWlhdAryQY04Gb2ZhUI"
-},
-
-{
-title:"Dark Horse",
-artist:"Katy Perry",
-embed:"https://open.spotify.com/embed/track/5jrdCoLpJSvHHorevXBATy"
-},
-
-{
-title:"Havana",
-artist:"Camila Cabello",
-embed:"https://open.spotify.com/embed/track/1rfofaqEpACxVEHIZBJe6W"
-},
-
-{
-title:"Señorita",
-artist:"Shawn Mendes",
-embed:"https://open.spotify.com/embed/track/0TK2YIli7K1leLovkQiNik"
-},
-
-{
-title:"Stitches",
-artist:"Shawn Mendes",
-embed:"https://open.spotify.com/embed/track/5jsw9uXEGuKyJzs0boZ1bT"
-},
-
- {
-title:"Take Me To Church",
-artist:"Hozier",
-embed:"https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
-},
-
-{
-title:"Riptide",
-artist:"Vance Joy",
-embed:"https://open.spotify.com/embed/track/3J9LjYIuVq2M8o7rVd6c5U"
-},
-
-{
-title:"Stressed Out",
-artist:"Twenty One Pilots",
-embed:"https://open.spotify.com/embed/track/3CRDbSIZ4r5MsZ0YwxuEkn"
-},
-
-{
-title:"Ride",
-artist:"Twenty One Pilots",
-embed:"https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW"
-},
-
-{
-title:"Heathens",
-artist:"Twenty One Pilots",
-embed:"https://open.spotify.com/embed/track/6i0V12jOa3mr6uu4WYhUBr"
-},
-
-{
-title:"Counting Stars",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
-},
-
-{
-title:"Apologize",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2NBQmPrOEEjA8VbeWOQGxO"
-},
-
-{
-title:"Photograph",
-artist:"Ed Sheeran",
-embed:"https://open.spotify.com/embed/track/1HNkqx9Ahdgi1Ixy2xkKkL"
-},
-
-{
-title:"Thinking Out Loud",
-artist:"Ed Sheeran",
-embed:"https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f"
-},
-
-{
-title:"Love Yourself",
-artist:"Justin Bieber",
-embed:"https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0"
-},
-
-{
-title:"Sorry",
-artist:"Justin Bieber",
-embed:"https://open.spotify.com/embed/track/09CtPGIpYB4BrO8qb1RGsF"
-},
-
-{
-title:"Stay",
-artist:"Justin Bieber",
-embed:"https://open.spotify.com/embed/track/5HCyWlXZPP0y6Gqq8TgA20"
-},
-
-{
-title:"Peaches",
-artist:"Justin Bieber",
-embed:"https://open.spotify.com/embed/track/4iJyoBOLtHqaGxP12qzhQI"
-},
-
-{
-title:"God's Plan",
-artist:"Drake",
-embed:"https://open.spotify.com/embed/track/6DCZcSspjsKoFjzjrWoCdn"
-},
-
-{
-title:"Hotline Bling",
-artist:"Drake",
-embed:"https://open.spotify.com/embed/track/0wwPcA6wtMf6HUMpIRdeP7"
-},
-
-{
-title:"One Dance",
-artist:"Drake",
-embed:"https://open.spotify.com/embed/track/1zi7xx7UVEFkmKfv06H8x0"
-},
-
-{
-title:"Sicko Mode",
-artist:"Travis Scott",
-embed:"https://open.spotify.com/embed/track/2xLMifQCjDGFmkHkpNLD9h"
-},
-
-{
-title:"Goosebumps",
-artist:"Travis Scott",
-embed:"https://open.spotify.com/embed/track/6gBFPUFcJLzWGx4lenP6h2"
-},
-
-{
-title:"HUMBLE",
-artist:"Kendrick Lamar",
-embed:"https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS"
-},
-
-{
-title:"DNA",
-artist:"Kendrick Lamar",
-embed:"https://open.spotify.com/embed/track/6HZILIRieu8S0iqY8kIKhj"
-},
-
-{
-title:"Lucid Dreams",
-artist:"Juice WRLD",
-embed:"https://open.spotify.com/embed/track/285pBltuF7vW8TeWk8hdRR"
-},
-
-{
-title:"All Girls Are The Same",
-artist:"Juice WRLD",
-embed:"https://open.spotify.com/embed/track/0t3ZvGKlmYmVsDzBJAXK8C"
-},
-
-{
-title:"XO TOUR Llif3",
-artist:"Lil Uzi Vert",
-embed:"https://open.spotify.com/embed/track/7GX5flRQZVHRAGd6B4TmDO"
-},
-
-{
-title:"Mask Off",
-artist:"Future",
-embed:"https://open.spotify.com/embed/track/0VgkVdmE4gld66l8iyGjgx"
-},
-
-{
-title:"HUMBLE",
-artist:"Kendrick Lamar",
-embed:"https://open.spotify.com/embed/track/7KXjTSCq5nL1LoYtL7XAwS"
-},
-
-{
-title:"Praise The Lord",
-artist:"A$AP Rocky",
-embed:"https://open.spotify.com/embed/track/7ycWLEP1GsNjVvcjawXz3z"
-},
-
-{
-title:"Sunflower",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/3KkXRkHbMCARz0aVfEt68P"
-},
-
-{
-title:"Better Now",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/7dt6x5M1jzdTEt8oCbisTK"
-},
-
-{
-title:"Congratulations",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/3a1lNhkSLSkpJE4MSHpDu9"
-},
-
-{
-title:"Rockstar",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/7wGoVu4Dady5GV0Sv4UIsx"
-},
-
-{
-title:"Circles",
-artist:"Post Malone",
-embed:"https://open.spotify.com/embed/track/21jGcNKet2qwijlDFuPiPb"
-},
-
-{
-title:"I Wanna Be Yours",
-artist:"Arctic Monkeys",
-embed:"https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n"
-},
-
-{
   {
 title:"Africa",
 artist:"Toto",
@@ -583,7 +347,7 @@ embed:"https://open.spotify.com/embed/track/3vkQ5DAB1qQMYO4Mr9zJN6"
 },
 
 {
-title:"Don't Stop Believin",
+title:"Don't Stop Believin'",
 artist:"Journey",
 embed:"https://open.spotify.com/embed/track/4bHsxqR3GMrXTxEPLuK5ue"
 },
@@ -595,27 +359,15 @@ embed:"https://open.spotify.com/embed/track/37ZJ0p5Jm13JPevGcx4SkF"
 },
 
 {
-title:"It's My Life",
-artist:"Bon Jovi",
-embed:"https://open.spotify.com/embed/track/0v1XpBHnsbkCn7iJ9Ucr1l"
-},
-
-{
 title:"Thunderstruck",
-artist:"AC/DC",
+artist:"ACDC",
 embed:"https://open.spotify.com/embed/track/57bgtoPSgt236HzfBOd8kj"
 },
 
 {
 title:"Back In Black",
-artist:"AC/DC",
+artist:"ACDC",
 embed:"https://open.spotify.com/embed/track/08mG3Y1vljYA6bvDt4Wqkj"
-},
-
-{
-title:"Highway To Hell",
-artist:"AC/DC",
-embed:"https://open.spotify.com/embed/track/2zYzyRzz6pRmhPzyfMEC8s"
 },
 
 {
@@ -631,12 +383,6 @@ embed:"https://open.spotify.com/embed/track/7oK9VyNzrYvRFo7nQEYkWN"
 },
 
 {
-title:"Somebody Told Me",
-artist:"The Killers",
-embed:"https://open.spotify.com/embed/track/4FgdJ4vJrYzF6kV6PpVZBq"
-},
-
-{
 title:"Boulevard Of Broken Dreams",
 artist:"Green Day",
 embed:"https://open.spotify.com/embed/track/5GorCbAP4aL0EJ16frG2hd"
@@ -649,12 +395,6 @@ embed:"https://open.spotify.com/embed/track/6nTiIhLmQ3FWhvrGafw2zj"
 },
 
 {
-title:"Basket Case",
-artist:"Green Day",
-embed:"https://open.spotify.com/embed/track/6L89mwZXSOwYl76YXfX13s"
-},
-
-{
 title:"Californication",
 artist:"Red Hot Chili Peppers",
 embed:"https://open.spotify.com/embed/track/48UPSzbZjgc449aqz8bxox"
@@ -664,12 +404,6 @@ embed:"https://open.spotify.com/embed/track/48UPSzbZjgc449aqz8bxox"
 title:"Can't Stop",
 artist:"Red Hot Chili Peppers",
 embed:"https://open.spotify.com/embed/track/3ZOEytgrvLwQaqXreDs2Jx"
-},
-
-{
-title:"Otherside",
-artist:"Red Hot Chili Peppers",
-embed:"https://open.spotify.com/embed/track/2i5K0EdMY5hG7L6vFQXG5E"
 },
 
 {
@@ -694,52 +428,13 @@ embed:"https://open.spotify.com/embed/track/0d28khcov6AiegSCpG5TuT"
 title:"Clint Eastwood",
 artist:"Gorillaz",
 embed:"https://open.spotify.com/embed/track/7yMiX7n9SBvadzox8T5jzT"
-},
-
-{
-title:"Pompeii",
-artist:"Bastille",
-embed:"https://open.spotify.com/embed/track/3gbBpTdY8lnQwqxNCcf795"
-},
-
-{
-title:"Radioactive",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
-},
-
-{
-title:"Demons",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/3LlAyCYU26dvFZBDUIMb7a"
-},
-
-{
-title:"Thunder",
-artist:"Imagine Dragons",
-embed:"https://open.spotify.com/embed/track/1zB4vmk8tFRmM9UULNzbLB"
-},
-
-{
-title:"Counting Stars",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
-},
-
-{
-title:"Apologize",
-artist:"OneRepublic",
-embed:"https://open.spotify.com/embed/track/2NBQmPrOEEjA8VbeWOQGxO"
-},
-
-{
-title:"Love Yourself",
-artist:"Justin Bieber",
-embed:"https://open.spotify.com/embed/track/50kpGaPAhYJ3sGmk6vplg0"
 }
 ];
 
 const roundNames = {
+  64: "32avos de final",
+  32: "16avos de final",
+  16: "Oitavas de final",
   8: "Quartas de final",
   4: "Semifinal",
   2: "Final",
@@ -752,6 +447,8 @@ let nextRound = [];
 let currentIndex = 0;
 let champion = null;
 
+const STORAGE_KEY = "soundclash_stats_v1";
+
 function shuffle(array) {
   const cloned = [...array];
   for (let i = cloned.length - 1; i > 0; i--) {
@@ -759,6 +456,65 @@ function shuffle(array) {
     [cloned[i], cloned[j]] = [cloned[j], cloned[i]];
   }
   return cloned;
+}
+
+function getTrackKey(track) {
+  return `${track.title}__${track.artist}`;
+}
+
+function loadStats() {
+  const raw = localStorage.getItem(STORAGE_KEY);
+
+  if (!raw) {
+    return {
+      totalVotes: 0,
+      wins: {}
+    };
+  }
+
+  try {
+    const parsed = JSON.parse(raw);
+    return {
+      totalVotes: parsed.totalVotes || 0,
+      wins: parsed.wins || {}
+    };
+  } catch {
+    return {
+      totalVotes: 0,
+      wins: {}
+    };
+  }
+}
+
+function saveStats(stats) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+}
+
+function recordWin(track) {
+  const stats = loadStats();
+  const key = getTrackKey(track);
+
+  stats.totalVotes += 1;
+  stats.wins[key] = (stats.wins[key] || 0) + 1;
+
+  saveStats(stats);
+}
+
+function getRanking(limit = 5) {
+  const stats = loadStats();
+
+  const ranking = Object.entries(stats.wins)
+    .map(([key, wins]) => {
+      const [title, artist] = key.split("__");
+      return { title, artist, wins };
+    })
+    .sort((a, b) => b.wins - a.wins)
+    .slice(0, limit);
+
+  return {
+    totalVotes: stats.totalVotes,
+    ranking
+  };
 }
 
 function startGame() {
@@ -775,6 +531,8 @@ function restartGame() {
 }
 
 function chooseTrack(track) {
+  recordWin(track);
+
   nextRound.push(track);
   currentIndex += 2;
 
@@ -795,11 +553,63 @@ function chooseTrack(track) {
   render();
 }
 
+function chooseTrackByIndex(index) {
+  chooseTrack(currentRound[index]);
+}
+
+function shareChampion() {
+  if (!champion) return;
+
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} — ${champion.artist}`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "SoundClash",
+      text
+    }).catch(() => {});
+    return;
+  }
+
+  navigator.clipboard.writeText(text)
+    .then(() => alert("Resultado copiado para a área de transferência!"))
+    .catch(() => alert(text));
+}
+
+function renderRankingBlock() {
+  const { totalVotes, ranking } = getRanking();
+
+  const items = ranking.length
+    ? ranking.map((item, index) => `
+        <li class="ranking-item">
+          <span class="ranking-pos">#${index + 1}</span>
+          <div class="ranking-info">
+            <strong>${item.title}</strong>
+            <span>${item.artist}</span>
+          </div>
+          <span class="ranking-wins">${item.wins} vitórias</span>
+        </li>
+      `).join("")
+    : `<li class="ranking-empty">Ainda não há vitórias registradas.</li>`;
+
+  return `
+    <div class="ranking-box">
+      <div class="ranking-header">
+        <h3>Ranking Global</h3>
+        <div class="votes-badge">Votos globais: <strong>${totalVotes}</strong></div>
+      </div>
+      <ul class="ranking-list">
+        ${items}
+      </ul>
+    </div>
+  `;
+}
+
 function renderStartScreen() {
   return `
     <div class="start-screen">
       <h1 class="site-title">SoundClash</h1>
       <button class="main-btn" onclick="startGame()">COMEÇAR</button>
+      ${renderRankingBlock()}
     </div>
   `;
 }
@@ -823,7 +633,12 @@ function renderWinnerScreen() {
         </div>
       </div>
 
-      <button class="main-btn" onclick="restartGame()">JOGAR DE NOVO</button>
+      <div class="winner-actions">
+        <button class="main-btn" onclick="shareChampion()">COMPARTILHAR MINHA CAMPEÃ</button>
+        <button class="main-btn secondary-btn" onclick="restartGame()">JOGAR DE NOVO</button>
+      </div>
+
+      ${renderRankingBlock()}
     </div>
   `;
 }
@@ -841,6 +656,8 @@ function renderBattleScreen() {
       <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
       <button class="main-btn" onclick="restartGame()">REINICIAR</button>
     </div>
+
+    ${renderRankingBlock()}
 
     <div class="battle-grid">
       <div class="card">
@@ -878,10 +695,6 @@ function renderBattleScreen() {
   `;
 }
 
-function chooseTrackByIndex(index) {
-  chooseTrack(currentRound[index]);
-}
-
 function render() {
   const game = document.getElementById("game");
 
@@ -899,6 +712,3 @@ function render() {
 }
 
 render();
-
-
-
