@@ -1202,17 +1202,14 @@ function renderBattleScreen() {
   const totalDuels = currentRound.length / 2;
   const phase = roundNames[currentRound.length] || `${currentRound.length / 2} confrontos`;
 
- return `
-  <div class="topbar">
-    ...
-  </div>
+  return `
+    <div class="topbar">
+      <div class="badge">Fase: <strong>${phase}</strong></div>
+      <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
+      <button class="main-btn" onclick="restartGame()">REINICIAR</button>
+    </div>
 
-  <div class="battle-grid">
-    ...
-  </div>
-
-  ${renderRankingBlock()}
-`;
+    ${renderRankingBlock()}
 
     <div class="battle-grid">
       <div class="card">
@@ -1267,7 +1264,6 @@ function render() {
 }
 
 render();
-
 
 
 
