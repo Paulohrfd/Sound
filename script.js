@@ -1003,14 +1003,11 @@ function renderWinnerScreen() {
           </iframe>
         </div>
       </div>
-      <button class="main-btn" onclick="startGame()">NOVA COPA</button>
 
       <div class="winner-actions">
-        <button class="main-btn" onclick="shareChampion()">COMPARTILHAR MINHA CAMPEÃ</button>
-        <button class="main-btn secondary-btn" onclick="restartGame()">JOGAR DE NOVO</button>
+        <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
+        <button class="main-btn" onclick="startGame()">NOVA COPA</button>
       </div>
-
-      ${renderRankingBlock()}
     </div>
   `;
 }
@@ -1095,14 +1092,15 @@ function shareChampion() {
       title: "SoundClash",
       text: text,
       url: window.location.href
-    });
-  } else {
-    navigator.clipboard.writeText(text + " " + window.location.href);
-    alert("Resultado copiado para compartilhar!");
+    }).catch(() => {});
+    return;
   }
+
+  navigator.clipboard.writeText(`${text} ${window.location.href}`)
+    .then(() => alert("Resultado copiado para compartilhar!"))
+    .catch(() => alert(text));
 }
 
-}
 
 
 
