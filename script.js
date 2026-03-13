@@ -792,7 +792,7 @@ function startGame() {
   champion = null;
   nextRound = [];
   currentIndex = 0;
- currentRound = shuffle([...tracks]);
+ currentRound = shuffle([...tracks]).slice(0, 128);
   render();
 }
 
@@ -983,6 +983,7 @@ function render() {
 }
 
 render();
+
 
 
 
