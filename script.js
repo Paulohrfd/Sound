@@ -1266,19 +1266,27 @@ async function chooseTrack(winner) {
   if (nextRound.length === 1) {
     champion = nextRound[0];
     saveChampion(champion);
-    nextRound = [];
-    await setLoading("Finalizando resultado...");
     render();
     return;
   }
 
-  await setLoading("Preparando próxima fase...");
+  const shuffledNextRound = shuffle([...nextRound]);
 
-  currentRound = shuffle([...nextRound]);
-nextRound = [];
-currentIndex = 0;
+  currentRound = shuffledNextRound;
+  nextRound = [];
+  currentIndex = 0;
+
+  const nextPhase = roundNames[currentRound.length] || "Próxima fase";
+  loadingText = nextPhase;
+  loadingPhase = true;
   render();
+
+  setTimeout(() => {
+    loadingPhase = false;
+    render();
+  }, 900);
 }
+
 
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
