@@ -428,6 +428,269 @@ embed:"https://open.spotify.com/embed/track/0d28khcov6AiegSCpG5TuT"
 title:"Clint Eastwood",
 artist:"Gorillaz",
 embed:"https://open.spotify.com/embed/track/7yMiX7n9SBvadzox8T5jzT"
+}, 
+  {
+title:"Do I Wanna Know?",
+artist:"Arctic Monkeys",
+embed:"https://open.spotify.com/embed/track/5FVd6KXrgO9B3JPmC8OPst"
+},
+
+{
+title:"I Wanna Be Yours",
+artist:"Arctic Monkeys",
+embed:"https://open.spotify.com/embed/track/5XeFesFbtLpXzIVDNQP22n"
+},
+
+{
+title:"The Less I Know The Better",
+artist:"Tame Impala",
+embed:"https://open.spotify.com/embed/track/6K4t31amVTZDgR3sKmwUJJ"
+},
+
+{
+title:"Feels Like We Only Go Backwards",
+artist:"Tame Impala",
+embed:"https://open.spotify.com/embed/track/0LtOwyZoSNZKJWHqjzADpW"
+},
+
+{
+title:"Borderline",
+artist:"Tame Impala",
+embed:"https://open.spotify.com/embed/track/5hM5arv9KDbCHS0k9uqwjr"
+},
+
+{
+title:"Let It Be",
+artist:"The Beatles",
+embed:"https://open.spotify.com/embed/track/7iN1s7xHE4ifF5povM6A48"
+},
+
+{
+title:"Hey Jude",
+artist:"The Beatles",
+embed:"https://open.spotify.com/embed/track/7pKfPomDEeI4TPT6EOYjn9"
+},
+
+{
+title:"Come Together",
+artist:"The Beatles",
+embed:"https://open.spotify.com/embed/track/2EqlS6tkEnglzr7tkKAAYD"
+},
+
+{
+title:"Beat It",
+artist:"Michael Jackson",
+embed:"https://open.spotify.com/embed/track/3BovdzfaX4jb5KFQwoPfAw"
+},
+
+{
+title:"Smooth Criminal",
+artist:"Michael Jackson",
+embed:"https://open.spotify.com/embed/track/2bCQHF9gdG5BNDVuEIEnNk"
+},
+
+{
+title:"Bad",
+artist:"Michael Jackson",
+embed:"https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
+},
+
+{
+title:"Stayin Alive",
+artist:"Bee Gees",
+embed:"https://open.spotify.com/embed/track/5ubvP9oKmxLUVq506fgLhk"
+},
+
+{
+title:"September",
+artist:"Earth Wind & Fire",
+embed:"https://open.spotify.com/embed/track/3cHyrEgdyYRjgJKSOiOtcS"
+},
+
+{
+title:"Never Gonna Give You Up",
+artist:"Rick Astley",
+embed:"https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
+},
+
+{
+title:"All Star",
+artist:"Smash Mouth",
+embed:"https://open.spotify.com/embed/track/3cfOd4CMv2snFaKAnMdnvK"
+},
+
+{
+title:"Another Brick In The Wall",
+artist:"Pink Floyd",
+embed:"https://open.spotify.com/embed/track/0vFOzaXqZHahrZp6enQwQb"
+},
+
+{
+title:"Comfortably Numb",
+artist:"Pink Floyd",
+embed:"https://open.spotify.com/embed/track/6ZFbXIJkuI1dVNWvzJzown"
+},
+
+{
+title:"Wish You Were Here",
+artist:"Pink Floyd",
+embed:"https://open.spotify.com/embed/track/6mFkJmJqdDVQ1REhVfGgd1"
+},
+
+{
+title:"Come As You Are",
+artist:"Nirvana",
+embed:"https://open.spotify.com/embed/track/2RsAajgo0g7bMCHxwH3Sk0"
+},
+
+{
+title:"Lithium",
+artist:"Nirvana",
+embed:"https://open.spotify.com/embed/track/5O0hQ0nJ7gV9uF3s3sWzPW"
+},
+
+{
+title:"Riptide",
+artist:"Vance Joy",
+embed:"https://open.spotify.com/embed/track/3J9LjYIuVq2M8o7rVd6c5U"
+},
+
+{
+title:"Pompeii",
+artist:"Bastille",
+embed:"https://open.spotify.com/embed/track/3gbBpTdY8lnQwqxNCcf795"
+},
+
+{
+title:"Take On Me",
+artist:"a-ha",
+embed:"https://open.spotify.com/embed/track/2WfaOiMkCvy7F5fcp2zZ8L"
+},
+
+{
+title:"Seven Nation Army",
+artist:"The White Stripes",
+embed:"https://open.spotify.com/embed/track/3dPQuX8Gs42Y7b454ybpMR"
+},
+
+{
+title:"Under Pressure",
+artist:"Queen & David Bowie",
+embed:"https://open.spotify.com/embed/track/11IzgLRXV7Cgek3tEgGgjw"
+},
+
+{
+title:"We Will Rock You",
+artist:"Queen",
+embed:"https://open.spotify.com/embed/track/4pbJqGIASGPr0ZpGpnWkDn"
+},
+
+{
+title:"We Are The Champions",
+artist:"Queen",
+embed:"https://open.spotify.com/embed/track/1lCRw5FEZ1gPDNPzy1K4zW"
+},
+
+{
+title:"Don't Stop Me Now",
+artist:"Queen",
+embed:"https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7"
+},
+
+{
+title:"Take Me To Church",
+artist:"Hozier",
+embed:"https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
+},
+
+{
+title:"Counting Stars",
+artist:"OneRepublic",
+embed:"https://open.spotify.com/embed/track/2tpWsVSb9UEmDRxAl1zhX1"
+},
+
+{
+title:"Radioactive",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/62yJjFtgkhUrXktIoSjgP2"
+},
+
+{
+title:"Demons",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/3LlAyCYU26dvFZBDUIMb7a"
+},
+
+{
+title:"Thunder",
+artist:"Imagine Dragons",
+embed:"https://open.spotify.com/embed/track/0tKcYR2II1VCQWT79i5NrW"
+},
+
+{
+title:"Can't Feel My Face",
+artist:"The Weeknd",
+embed:"https://open.spotify.com/embed/track/22VdIZQfgXJea34mQxlt81"
+},
+
+{
+title:"Save Your Tears",
+artist:"The Weeknd",
+embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+},
+
+{
+title:"Blinding Lights",
+artist:"The Weeknd",
+embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+},
+
+{
+title:"Uptown Funk",
+artist:"Mark Ronson ft. Bruno Mars",
+embed:"https://open.spotify.com/embed/track/32OlwWuMpZ6b0aN2RZOeMS"
+},
+
+{
+title:"Just The Way You Are",
+artist:"Bruno Mars",
+embed:"https://open.spotify.com/embed/track/7BqHUALzNBTanL6OvsqmC1"
+},
+
+{
+title:"Locked Out Of Heaven",
+artist:"Bruno Mars",
+embed:"https://open.spotify.com/embed/track/3z8h0TU7ReDPLIbEnYhWZb"
+},
+
+{
+title:"Grenade",
+artist:"Bruno Mars",
+embed:"https://open.spotify.com/embed/track/2NVt7fxr5GsqTkGwYXcNTE"
+},
+
+{
+title:"Treasure",
+artist:"Bruno Mars",
+embed:"https://open.spotify.com/embed/track/5JBGhnJhsb3lzfVnVqY2Vj"
+},
+
+{
+title:"Shape Of My Heart",
+artist:"Sting",
+embed:"https://open.spotify.com/embed/track/6Y1D7rA4hRZ9h4dK8nR9ZT"
+},
+
+{
+title:"Every Breath You Take",
+artist:"The Police",
+embed:"https://open.spotify.com/embed/track/1JSTJqkT5qHq8MDJnJbRE1"
+},
+
+{
+title:"Message In A Bottle",
+artist:"The Police",
+embed:"https://open.spotify.com/embed/track/1oYYd2gnWZYrt89EBXdFiO"
 }
 ];
 
@@ -712,5 +975,6 @@ function render() {
 }
 
 render();
+
 
 
