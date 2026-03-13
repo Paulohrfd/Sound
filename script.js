@@ -1082,8 +1082,7 @@ function restartGame() {
 }
 
 function chooseTrack(track) {
-  recordWin(track);
-
+ 
   nextRound.push(track);
   currentIndex += 2;
 
@@ -1091,11 +1090,13 @@ function chooseTrack(track) {
     render();
     return;
   }
+  
 
-  if (nextRound.length === 1) {
-    champion = nextRound[0];
-    render();
-    return;
+ if (nextRound.length === 1) {
+  champion = nextRound[0];
+  saveChampion(champion);
+  render();
+  return;
   }
 
   currentRound = nextRound;
@@ -1264,6 +1265,7 @@ function render() {
 }
 
 render();
+
 
 
 
