@@ -1090,10 +1090,16 @@ function renderRankingBlock() {
 
 function renderStartScreen() {
   return `
-    <div class="start-screen">
+    <div class="start-screen hero-screen">
+      <div class="hero-glow"></div>
+
       <h1 class="site-title">SoundClash</h1>
-      <button class="main-btn" onclick="startGame()">COMEÇAR</button>
-      ${renderRankingBlock()}
+
+      <button class="main-btn hero-btn" onclick="startGame()">COMEÇAR</button>
+
+      <div class="home-ranking-wrap">
+        ${renderRankingBlock()}
+      </div>
     </div>
   `;
 }
