@@ -871,7 +871,6 @@ function startGame() {
 
   render();
 }
-}
 
 function restartGame() {
   startGame();
@@ -1071,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
