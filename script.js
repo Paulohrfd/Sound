@@ -858,6 +858,7 @@ function getRanking(limit = 5) {
   }
   return array;
 }
+
 }
 
 function startGame() {
@@ -1069,8 +1070,10 @@ function shareChampion() {
   navigator.clipboard.writeText(`${text} ${window.location.href}`)
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
+  
 }
 
+render();
 
 
 
