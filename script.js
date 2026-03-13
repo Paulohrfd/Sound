@@ -988,6 +988,11 @@ let currentIndex = 0;
 let champion = null;
 let loadingPhase = false;
 let loadingText = "";
+let finalsHistory = {
+  quarter: [],
+  semi: [],
+  final: []
+};
 
 function shuffle(array) {
   const cloned = [...array];
@@ -1121,6 +1126,31 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
+<h2 class="share-title">Meu Campeão no SoundClash</h2>
+
+<div class="share-stage">
+<h3>Quartas de final</h3>
+${finalsHistory.quarter.map(t => `<p>${t.title}</p>`).join("")}
+</div>
+
+<div class="share-stage">
+<h3>Semifinal</h3>
+${finalsHistory.semi.map(t => `<p>${t.title}</p>`).join("")}
+</div>
+
+<div class="share-stage">
+<h3>Final</h3>
+${finalsHistory.final.map(t => `<p>${t.title}</p>`).join("")}
+</div>
+
+<div class="share-champion">
+🏆 CAMPEÃO  
+<strong>${champion.title}</strong>
+</div>
+
+<p class="share-footer">soundclash</p>
+
+</div>
         <p class="winner-title">🏆 CAMPEÃO SOUNDCLASH</p>
         <h3 class="winner-song">${champion.title}</h3>
         <p class="winner-artist">${champion.artist}</p>
@@ -1285,6 +1315,18 @@ async function chooseTrack(winner) {
     loadingPhase = false;
     render();
   }, 900);
+}
+// salvar fases finais
+if (currentRound.length === 8) {
+  finalsHistory.quarter = [...currentRound];
+}
+
+if (currentRound.length === 4) {
+  finalsHistory.semi = [...currentRound];
+}
+
+if (currentRound.length === 2) {
+  finalsHistory.final = [...currentRound];
 }
 
 
