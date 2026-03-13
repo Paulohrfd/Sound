@@ -905,17 +905,17 @@ function chooseTrack(track) {
 }
   
 
-  currentRound = nextRound;
-  nextRound = [];
-  currentIndex = 0;
-  render();
+
 }
 
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
 
-  }
+  }  currentRound = nextRound;
+  nextRound = [];
+  currentIndex = 0;
+  render();
 
   navigator.clipboard.writeText(text)
     .then(() => alert("Resultado copiado para a área de transferência!"))
@@ -1085,6 +1085,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
