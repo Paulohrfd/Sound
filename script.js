@@ -871,11 +871,6 @@ function startGame() {
   currentRound = shuffle([...cleanTracks]).slice(0, 128);
 
 
-  render();
-
-
-
-
 }
   
 
@@ -1074,6 +1069,7 @@ function shareChampion() {
 }
 
 render();
+
 
 
 
