@@ -509,6 +509,125 @@ font-size:15px;
   text-align: center;
   letter-spacing: 2px;
 }
+  .share-card {
+  max-width: 920px;
+  margin: 0 auto 24px;
+  padding: 26px 24px 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #13265a 0%, #0c1d49 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.28);
+  text-align: center;
+}
+
+.share-kicker {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.bracket-board {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.9fr 1.1fr;
+  gap: 18px;
+  align-items: center;
+}
+
+.bracket-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bracket-col h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.quarter-col {
+  padding-top: 0;
+}
+
+.semi-col {
+  padding-top: 44px;
+}
+
+.final-col {
+  padding-top: 98px;
+}
+
+.champion-col {
+  padding-top: 98px;
+}
+
+.bracket-match {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.07);
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+.champion-name {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(45deg, #7b4dff, #a06cff);
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(123, 77, 255, 0.35);
+}
+
+.champion-artist {
+  margin-top: 10px;
+  font-size: 15px;
+  opacity: 0.82;
+  text-align: center;
+}
+
+.share-footer {
+  margin-top: 24px;
+  opacity: 0.78;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+@media (max-width: 900px) {
+  .share-card {
+    padding: 22px 18px 24px;
+  }
+
+  .bracket-board {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .semi-col,
+  .final-col,
+  .champion-col {
+    padding-top: 0;
+  }
+
+  .champion-name {
+    font-size: 18px;
+  }
+}
 
 
 
