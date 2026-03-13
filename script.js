@@ -797,11 +797,12 @@ function shuffle(array) {
   return cloned;
 }
 
+
+
 function uniqueTracks(list) {
   const seen = new Set();
 
   return list.filter(track => {
-    
     const key = `${track.title}__${track.artist}`.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
@@ -1131,4 +1132,5 @@ async function shareChampion() {
 }
 
 render();
+
 
