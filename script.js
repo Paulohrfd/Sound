@@ -1093,7 +1093,7 @@ function renderStartScreen() {
     <div class="start-screen hero-screen">
       <div class="hero-glow"></div>
 
-      <h1 class="site-title">SoundClash</h1>
+      <img src="logo.png" class="logo">
 
       <button class="main-btn hero-btn" onclick="startGame()">COMEÇAR</button>
 
