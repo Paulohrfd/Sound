@@ -390,13 +390,14 @@ iframe {
   .home-ranking-wrap .ranking-header h3 {
     font-size: 22px;
   }
-  
-  .logo {
-  width: 260px;
-  max-width: 80%;
-  margin-bottom: 10px;
+ .logo {
+  width: 180px;
+  max-width: 70%;
 }
 
+@media (max-width:600px){
+  .logo{
+    width:140px;
 }
 
 
