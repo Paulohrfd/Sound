@@ -874,11 +874,7 @@ function startGame() {
 }
 
 function restartGame() {
-  startGame();
-
-  
-
- 
+  startGame(); 
 
 }
 
@@ -1083,6 +1079,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
