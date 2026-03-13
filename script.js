@@ -876,6 +876,23 @@ function startGame() {
 
 function restartGame() {
   startGame();
+}function shareChampion() {
+  if (!champion) return;
+
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} — ${champion.artist}`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "SoundClash",
+      text: text,
+      url: window.location.href
+    }).catch(() => {});
+    return;
+  }
+
+  navigator.clipboard.writeText(`${text}\n${window.location.href}`)
+    .then(() => alert("Resultado copiado para compartilhar!"))
+    .catch(() => alert(text));
 }
 
 function chooseTrack(track) {
@@ -1068,9 +1085,25 @@ function render() {
 
 render();
 
+function shareChampion() {
+  if (!champion) return;
 
+  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} — ${champion.artist}`;
+
+  if (navigator.share) {
+    navigator.share({
+      title: "SoundClash",
+      text: text,
+      url: window.location.href
+    });
+  } else {
+    navigator.clipboard.writeText(text + " " + window.location.href);
+    alert("Resultado copiado para compartilhar!");
+  }
+}
 
 }
+
 
 
 
