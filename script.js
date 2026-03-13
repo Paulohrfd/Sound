@@ -219,7 +219,7 @@ const tracks = [
   {
     title: "Hello",
     artist: "Adele",
-    embed: "https://open.spotify.com/embed/track/4kflIGfjdZJW4ot2ioixTB"
+    embed: "https://open.spotify.com/embed/track/62PaSfnXSMyLshYJrlTuL3"
   },
   {
     title: "Rolling In The Deep",
@@ -631,7 +631,7 @@ embed:"https://open.spotify.com/embed/track/3z8h0TU7ReDPLIbEnYhWZb"
 {
 title:"Grenade",
 artist:"Bruno Mars",
-embed:"https://open.spotify.com/embed/track/2NVt7fxr5GsqTkGwYXcNTE"
+embed:"https://open.spotify.com/embed/track/4lLtanYk6tkMvooU0tWzG8"
 },
 
 {
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
