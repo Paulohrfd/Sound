@@ -1126,21 +1126,35 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
-<h2 class="share-title">Meu Campeão no SoundClash</h2>
 
-<div class="share-stage">
-<h3>Quartas de final</h3>
-${finalsHistory.quarter.map(t => `<p>${t.title}</p>`).join("")}
+<h2 class="share-title">Minha Copa no SoundClash</h2>
+
+<div class="bracket">
+
+<div class="col">
+<h4>Quartas</h4>
+${finalsHistory.quarter.map(t => `<div class="match">${t.title}</div>`).join("")}
 </div>
 
-<div class="share-stage">
-<h3>Semifinal</h3>
-${finalsHistory.semi.map(t => `<p>${t.title}</p>`).join("")}
+<div class="col">
+<h4>Semifinal</h4>
+${finalsHistory.semi.map(t => `<div class="match">${t.title}</div>`).join("")}
 </div>
 
-<div class="share-stage">
-<h3>Final</h3>
-${finalsHistory.final.map(t => `<p>${t.title}</p>`).join("")}
+<div class="col">
+<h4>Final</h4>
+${finalsHistory.final.map(t => `<div class="match">${t.title}</div>`).join("")}
+</div>
+
+<div class="col champion">
+<h4>🏆 Campeão</h4>
+<div class="champion-name">${champion.title}</div>
+</div>
+
+</div>
+
+<p class="share-footer">soundclash</p>
+
 </div>
 
 <div class="share-champion">
