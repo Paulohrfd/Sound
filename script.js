@@ -1067,8 +1067,8 @@ function shareChampion() {
     .catch(() => alert(text));
   
 }
-
 render();
+
 
 
 
