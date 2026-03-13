@@ -791,8 +791,12 @@ function startGame() {
   champion = null;
   nextRound = [];
   currentIndex = 0;
- currentRound = shuffle([...tracks]).slice(0, 128);
+
+  const cleanTracks = uniqueTracks(tracks);
+  currentRound = shuffle([...cleanTracks]).slice(0, 128);
+
   render();
+}
 }
 
 function restartGame() {
@@ -872,6 +876,16 @@ function renderRankingBlock() {
       </ul>
     </div>
   `;
+}
+function uniqueTracks(list) {
+  const seen = new Set();
+
+  return list.filter(track => {
+    const key = `${track.title}__${track.artist}`.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function renderStartScreen() {
@@ -983,6 +997,7 @@ function render() {
 }
 
 render();
+
 
 
 
