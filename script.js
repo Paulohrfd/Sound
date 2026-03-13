@@ -778,6 +778,7 @@ const roundNames = {
   1: "Campeã"
 };
 
+const STORAGE_KEY = "soundclash_champions_v1";
 
 let started = false;
 let currentRound = [];
@@ -787,7 +788,6 @@ let champion = null;
 let loadingPhase = false;
 let loadingText = "";
 
-
 function shuffle(array) {
   const cloned = [...array];
   for (let i = cloned.length - 1; i > 0; i--) {
@@ -796,23 +796,22 @@ function shuffle(array) {
   }
   return cloned;
 }
+
 function uniqueTracks(list) {
   const seen = new Set();
 
   return list.filter(track => {
-    const key = `${track.title}__${track.artist}`.toLowerCase();
+    const key = ${track.title}__${track.artist}.toLowerCase();
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
-}const STORAGE_KEY = "soundclash_champions_v1";
+}
 
 function loadChampions() {
   const raw = localStorage.getItem(STORAGE_KEY);
 
-  if (!raw) {
-    return {};
-  }
+  if (!raw) return {};
 
   try {
     return JSON.parse(raw);
@@ -823,7 +822,7 @@ function loadChampions() {
 
 function saveChampion(track) {
   const data = loadChampions();
-  const key = `${track.title}__${track.artist}`;
+  const key = ${track.title}__${track.artist};
 
   if (!data[key]) {
     data[key] = {
@@ -834,7 +833,6 @@ function saveChampion(track) {
   }
 
   data[key].wins += 1;
-
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
@@ -867,7 +865,7 @@ function renderRankingBlock() {
           <span class="ranking-wins">${item.wins} copas</span>
         </li>
       `).join("")
-    : `<li class="ranking-empty">Ainda não há campeãs registradas.</li>`;
+    : <li class="ranking-empty">Ainda não há campeãs registradas.</li>;
 
   return `
     <div class="ranking-box">
@@ -887,6 +885,14 @@ function renderStartScreen() {
     <div class="start-screen">
       <h1 class="site-title">SoundClash</h1>
       <button class="main-btn" onclick="startGame()">COMEÇAR</button>
+    </div>
+  `;
+}
+
+function renderLoadingScreen() {
+  return `
+    <div class="start-screen">
+      <h1 class="site-title">${loadingText}</h1>
     </div>
   `;
 }
@@ -924,73 +930,13 @@ function renderWinnerScreen() {
     </div>
   `;
 }
-function renderLoadingScreen() {
-  return `
-    <div class="start-screen">
-      <h1 class="site-title">${loadingText}</h1>
-    </div>
-  `;
-}
-async function generateChampionImage() {
-  const card = document.querySelector(".share-card");
-  if (!card) return null;
-
-  const canvas = await html2canvas(card, {
-    backgroundColor: null,
-    scale: 2
-  });
-
-  return canvas.toDataURL("image/png");
-}
-
-async function downloadChampionImage() {
-  const dataUrl = await generateChampionImage();
-  if (!dataUrl || !champion) return;
-
-  const link = document.createElement("a");
-  link.href = dataUrl;
-  link.download = `soundclash-${champion.title}.png`;
-  link.click();
-}
-
-async function shareChampion() {
-  if (!champion) return;
-
-  const text = `🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist}`;
-  const dataUrl = await generateChampionImage();
-
-  if (!dataUrl) {
-    alert("Não foi possível gerar a imagem.");
-    return;
-  }
-
-  const response = await fetch(dataUrl);
-  const blob = await response.blob();
-  const file = new File([blob], "soundclash-campea.png", { type: "image/png" });
-
-  if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
-    navigator.share({
-      title: "SoundClash",
-      text,
-      files: [file]
-    }).catch(() => {});
-    return;
-  }
-
-  const link = document.createElement("a");
-  link.href = dataUrl;
-  link.download = "soundclash-campea.png";
-  link.click();
-
-}
-
 
 function renderBattleScreen() {
   const left = currentRound[currentIndex];
   const right = currentRound[currentIndex + 1];
   const duel = Math.floor(currentIndex / 2) + 1;
   const totalDuels = currentRound.length / 2;
-  const phase = roundNames[currentRound.length] || `${currentRound.length / 2} confrontos`;
+  const phase = roundNames[currentRound.length] || ${currentRound.length / 2} confrontos;
 
   return `
     <div class="topbar">
@@ -1048,6 +994,11 @@ function render() {
     return;
   }
 
+  if (loadingPhase) {
+    game.innerHTML = renderLoadingScreen();
+    return;
+  }
+
   if (champion) {
     game.innerHTML = renderWinnerScreen();
     return;
@@ -1061,13 +1012,14 @@ function startGame() {
   champion = null;
   currentIndex = 0;
   nextRound = [];
+  loadingPhase = false;
+  loadingText = "";
 
   const cleanTracks = uniqueTracks(tracks);
-  currentRound = shuffle([...cleanTracks]).slice(0, 128);
+  currentRound = shuffle(cleanTracks).slice(0, 128);
 
   render();
 }
-
 
 function chooseTrack(winner) {
   nextRound.push(winner);
@@ -1098,19 +1050,61 @@ function chooseTrack(winner) {
     loadingPhase = false;
     render();
   }, 900);
-
 }
 
-  
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
 
+async function generateChampionImage() {
+  const card = document.querySelector(".share-card");
+  if (!card || typeof html2canvas === "undefined") return null;
+
+  const canvas = await html2canvas(card, {
+    backgroundColor: null,
+    scale: 2
+  });
+
+  return canvas.toDataURL("image/png");
+}
+
+async function downloadChampionImage() {
+  const dataUrl = await generateChampionImage();
+  if (!dataUrl || !champion) return;
+
+  const link = document.createElement("a");
+  link.href = dataUrl;
+  link.download = soundclash-${champion.title}.png;
+  link.click();
+}
+
+async function shareChampion() {
+  if (!champion) return;
+
+  const text = 🎵 Minha campeã no SoundClash foi: ${champion.title} - ${champion.artist};
+  const dataUrl = await generateChampionImage();
+
+  if (!dataUrl) {
+    alert("Não foi possível gerar a imagem.");
+    return;
+  }
+
+  const response = await fetch(dataUrl);
+  const blob = await response.blob();
+  const file = new File([blob], "soundclash-campea.png", { type: "image/png" });
+
+  if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+    navigator.share({
+      title: "SoundClash",
+      text,
+      files: [file]
+    }).catch(() => {});
+    return;
+  }
+
+  const link = document.createElement("a");
+  link.href = dataUrl;
+  link.download = "soundclash-campea.png";link.click();
+}
+
 render();
-
-
-
-
-
-
-
