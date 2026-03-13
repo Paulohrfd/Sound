@@ -1307,6 +1307,19 @@ async function chooseTrack(winner) {
     return;
   }
 
+  // salva as fases quando elas terminam
+  if (currentRound.length === 8) {
+    finalsHistory.quarter = [...nextRound];
+  }
+
+  if (currentRound.length === 4) {
+    finalsHistory.semi = [...nextRound];
+  }
+
+  if (currentRound.length === 2) {
+    finalsHistory.final = [...nextRound];
+  }
+
   if (nextRound.length === 1) {
     champion = nextRound[0];
     saveChampion(champion);
@@ -1314,8 +1327,11 @@ async function chooseTrack(winner) {
     return;
   }
 
-  // embaralhar todos os vencedores da fase
-  currentRound = shuffle(nextRound);
+  if (nextRound.length <= 64) {
+    currentRound = shuffle([...nextRound]);
+  } else {
+    currentRound = [...nextRound];
+  }
 
   nextRound = [];
   currentIndex = 0;
