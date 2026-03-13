@@ -119,7 +119,7 @@ const tracks = [
   {
     title: "Vai Malandra",
     artist: "Anitta",
-    embed: "https://open.spotify.com/embed/track/6t9F1z5xk2mO4RZ0sZx7MZ"
+    embed: "https://open.spotify.com/embed/track/6u0EAxf1OJTLS7CvInuNd7"
   },
   {
     title: "Kenny G",
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
