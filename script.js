@@ -1270,9 +1270,9 @@ async function chooseTrack(winner) {
     return;
   }
 
-  const shuffledNextRound = shuffle([...nextRound]);
+  // embaralhar todos os vencedores da fase
+  currentRound = shuffle(nextRound);
 
-  currentRound = shuffledNextRound;
   nextRound = [];
   currentIndex = 0;
 
