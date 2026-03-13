@@ -874,28 +874,6 @@ function startGame() {
 
 
 
-}
-
-function chooseTrack(track) {
-  nextRound.push(track);
-  currentIndex += 2;
-
-  if (currentIndex < currentRound.length) {
-    render();
-    return;
-  } 
-  
-  if (nextRound.length === 1) {
-  champion = nextRound[0];
-  saveChampion(champion);
-  render();
-  return;
-  }
-  
-   currentRound = nextRound;
-  nextRound = [];
-  currentIndex = 0;
-  render();
 
 }
   
@@ -1065,7 +1043,7 @@ function chooseTrack(track) {
   return;
   }
   
-   currentRound = nextRound;
+  currentRound = nextRound;
   nextRound = [];
   currentIndex = 0;
   render();
@@ -1073,7 +1051,6 @@ function chooseTrack(track) {
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
 }
-
 
 function shareChampion() {
   if (!champion) return;
@@ -1093,6 +1070,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
