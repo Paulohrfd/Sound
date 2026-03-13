@@ -869,7 +869,6 @@ function startGame() {
   const cleanTracks = uniqueTracks(tracks);
   currentRound = shuffle([...cleanTracks]).slice(0, 128);
 
-  <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
 
   render();
 }
@@ -1088,6 +1087,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
