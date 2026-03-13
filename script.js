@@ -274,7 +274,7 @@ const tracks = [
   {
     title: "Take Me To Church",
     artist: "Hozier",
-    embed: "https://open.spotify.com/embed/track/3dYD57lRAUcMHufyqn9GcI"
+    embed: "https://open.spotify.com/embed/track/7x93eCAiJQF7DUt979fj3p"
   },
   {
     title: "Stressed Out",
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
