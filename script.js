@@ -1126,27 +1126,32 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
-  <h2 class="share-title">Minha Copa no SoundClash</h2>
+  <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
-  <div class="bracket">
-    <div class="col">
+  <div class="bracket-board">
+    <div class="bracket-col quarter-col">
       <h4>Quartas</h4>
-      ${finalsHistory.quarter.map(t => `<div class="match">${t.title}</div>`).join("")}
+      <div class="bracket-match">${finalsHistory.quarter[0]?.title || ""}</div>
+      <div class="bracket-match">${finalsHistory.quarter[1]?.title || ""}</div>
+      <div class="bracket-match">${finalsHistory.quarter[2]?.title || ""}</div>
+      <div class="bracket-match">${finalsHistory.quarter[3]?.title || ""}</div>
     </div>
 
-    <div class="col">
+    <div class="bracket-col semi-col">
       <h4>Semifinal</h4>
-      ${finalsHistory.semi.map(t => `<div class="match">${t.title}</div>`).join("")}
+      <div class="bracket-match">${finalsHistory.semi[0]?.title || ""}</div>
+      <div class="bracket-match">${finalsHistory.semi[1]?.title || ""}</div>
     </div>
 
-    <div class="col">
+    <div class="bracket-col final-col">
       <h4>Final</h4>
-      ${finalsHistory.final.map(t => `<div class="match">${t.title}</div>`).join("")}
+      <div class="bracket-match">${finalsHistory.final[0]?.title || ""}</div>
     </div>
 
-    <div class="col champion">
+    <div class="bracket-col champion-col">
       <h4>🏆 Campeão</h4>
       <div class="champion-name">${champion.title}</div>
+      <div class="champion-artist">${champion.artist}</div>
     </div>
   </div>
 
@@ -1294,7 +1299,6 @@ async function chooseTrack(winner) {
     return;
   }
 
-  // salva as fases quando elas terminam
   if (currentRound.length === 8) {
     finalsHistory.quarter = [...nextRound];
   }
@@ -1333,6 +1337,7 @@ async function chooseTrack(winner) {
     render();
   }, 900);
 }
+
 // salvar fases finais
 if (currentRound.length === 8) {
   finalsHistory.quarter = [...currentRound];
