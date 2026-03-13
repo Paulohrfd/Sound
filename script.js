@@ -881,7 +881,7 @@ function restartGame() {
   navigator.clipboard.writeText(`${text}\n${window.location.href}`)
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
-}
+},
 
 function chooseTrack(track) {
  
@@ -1087,6 +1087,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
