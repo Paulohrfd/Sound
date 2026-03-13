@@ -785,6 +785,9 @@ let currentRound = [];
 let nextRound = [];
 let currentIndex = 0;
 let champion = null;
+let loadingPhase = false;
+let loadingText = "";
+
 
 function shuffle(array) {
   const cloned = [...array];
@@ -914,6 +917,34 @@ function renderWinnerScreen() {
     </div>
   `;
 }
+function renderLoadingScreen() {
+  return `
+    <div class="start-screen">
+      <h1 class="site-title">${loadingText}</h1>
+    </div>
+  `;
+}
+function render() {
+  const game = document.getElementById("game");
+  if (!game) return;
+
+  if (!started) {
+    game.innerHTML = renderStartScreen();
+    return;
+  }
+
+  if (loadingPhase) {
+    game.innerHTML = renderLoadingScreen();
+    return;
+  }
+
+  if (champion) {
+    game.innerHTML = renderWinnerScreen();
+    return;
+  }
+
+  game.innerHTML = renderBattleScreen();
+}
 
 
 function renderBattleScreen() {
@@ -1009,11 +1040,26 @@ function chooseTrack(winner) {
     return;
   }
 
- if (nextRound.length === 1) {
-  champion = nextRound[0];
-  saveChampion(champion);
+  if (nextRound.length === 1) {
+    champion = nextRound[0];
+    saveChampion(champion);
+    render();
+    return;
+  }
+
+  currentRound = nextRound;
+  nextRound = [];
+  currentIndex = 0;
+
+  const nextPhase = roundNames[currentRound.length] || "Próxima fase";
+  loadingText = nextPhase;
+  loadingPhase = true;
   render();
-  return;
+
+  setTimeout(() => {
+    loadingPhase = false;
+    render();
+  }, 900);
 }
 
   
@@ -1029,5 +1075,6 @@ function chooseTrackByIndex(index) {
 }
 
 render();
+
 
 
