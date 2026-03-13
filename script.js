@@ -139,7 +139,7 @@ const tracks = [
   {
     title: "Ela É do Tipo",
     artist: "Kevin O Chris",
-    embed: "https://open.spotify.com/embed/track/6K8VQ84M3q2F7YQH7hV7wF"
+    embed: "https://open.spotify.com/embed/track/2x8TNY9KwNvD19gVGs4WOP"
   },
   {
     title: "Dias de Luta, Dias de Glória",
@@ -1070,6 +1070,7 @@ function render() {
 }
 
 render();
+
 
 
 
