@@ -891,6 +891,11 @@ function chooseTrack(track) {
   if (currentIndex < currentRound.length) {
     render();
     return;
+  } if (nextRound.length === 1) {
+  champion = nextRound[0];
+  saveChampion(champion);
+  render();
+  return;
   }
   
 
@@ -899,13 +904,6 @@ function chooseTrack(track) {
     .catch(() => alert(text));
 }
   
-
- if (nextRound.length === 1) {
-  champion = nextRound[0];
-  saveChampion(champion);
-  render();
-  return
-  }
 
   currentRound = nextRound;
   nextRound = [];
@@ -1087,6 +1085,7 @@ function shareChampion() {
     .then(() => alert("Resultado copiado para compartilhar!"))
     .catch(() => alert(text));
 }
+
 
 
 
