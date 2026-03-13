@@ -1069,7 +1069,9 @@ function shareChampion() {
     .catch(() => alert(text));
   
 }
+  window.stargame = stargame;
 render();
+
 
 
 
