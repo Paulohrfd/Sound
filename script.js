@@ -765,8 +765,6 @@ artist:"Portugal. The Man",
 embed:"https://open.spotify.com/embed/track/6QgjcU0zLnzq5OrUoSZ3OK"
 }
 
-
-
 ];
 
 const roundNames = {
@@ -1073,6 +1071,7 @@ function render() {
 }
 
 render();
+
 
 
 
