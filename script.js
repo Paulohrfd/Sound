@@ -862,6 +862,7 @@ function getRanking(limit = 5) {
 }
 
 function startGame() {
+  alert("startGame rodou");
   started = true;
   champion = null;
   nextRound = [];
@@ -1069,6 +1070,7 @@ function shareChampion() {
   
 }
 render();
+
 
 
 
