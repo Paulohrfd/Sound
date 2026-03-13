@@ -1,5 +1,4 @@
-const tracks
-  
+const tracks = [  
   {
     title: "As It Was",
     artist: "Harry Styles",
@@ -1108,6 +1107,7 @@ function chooseTrackByIndex(index) {
 }
 
 render();
+
 
 
 
