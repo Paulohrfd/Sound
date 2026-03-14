@@ -389,13 +389,13 @@ iframe {
 .final-col {
   flex: 0 0 200px;
   min-width: 200px;
-  margin-top: 300px;
+  margin-top: 320px;
 }
 
 .champion-col {
   flex: 0 0 210px;
   min-width: 210px;
-  margin-top: 300px;
+  margin-top: 320px;
 }
 
 .bracket-pair {
