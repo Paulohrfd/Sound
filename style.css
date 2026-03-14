@@ -521,6 +521,56 @@ box-shadow:0 10px 25px rgba(123,77,255,0.4);
     padding: 22px 18px 24px;
   
 }
+  /* CHAVE HORIZONTAL MOBILE */
+
+.bracket-board{
+display:flex;
+flex-direction:row;
+gap:22px;
+overflow-x:auto;
+overflow-y:hidden;
+padding:10px 0;
+}
+
+.bracket-col{
+min-width:160px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.quarter-col{
+margin-top:0;
+}
+
+.semi-col{
+margin-top:40px;
+}
+
+.final-col{
+margin-top:80px;
+}
+
+.champion-col{
+margin-top:80px;
+}
+
+.bracket-match{
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.07);
+padding:10px 12px;
+border-radius:12px;
+text-align:center;
+font-weight:600;
+}
+
+.champion-name{
+background:linear-gradient(45deg,#7b4dff,#a06cff);
+padding:16px;
+border-radius:16px;
+font-weight:800;
+font-size:20px;
+}
  
 
 
