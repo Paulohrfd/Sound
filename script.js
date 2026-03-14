@@ -1310,18 +1310,19 @@ function startGame() {
     finalWinner: null
   };
 
-undoAvailable = true;
-lastState = null;
-  
+  undoAvailable = true;
+  lastState = null;
+
   render();
 }
 
 async function chooseTrack(winner) {
   lastState = {
-  currentRound: [...currentRound],
-  nextRound: [...nextRound],
-  currentIndex: currentIndex
-};
+    currentRound: [...currentRound],
+    nextRound: [...nextRound],
+    currentIndex: currentIndex
+  };
+
   nextRound.push(winner);
   currentIndex += 2;
 
