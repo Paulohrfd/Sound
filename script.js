@@ -1410,7 +1410,7 @@ async function generateChampionImage() {
 
   return canvas.toDataURL("image/png");
 }
-}
+
 
 async function shareChampion() {
   if (!champion) return;
