@@ -551,4 +551,19 @@ iframe {
   .champion-name {
     font-size: 18px;
   }
+}   
+.bracket-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  align-items: center;
 }
+
+.bracket-x {
+  font-size: 28px;
+  font-weight: 800;
+  opacity: 0.9;
+  line-height: 1;
+}
+
