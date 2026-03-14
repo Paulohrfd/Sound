@@ -995,6 +995,8 @@ let finalsHistory = {
   quarterWinners: [],
   semiWinners: [],
   finalWinner: null
+let undoAvailable = true;
+let lastState = null;
 };
 
 function shuffle(array) {
@@ -1202,10 +1204,15 @@ function renderBattleScreen() {
 
   return `
     <div class="topbar">
-      <div class="badge">Fase: <strong>${phase}</strong></div>
-      <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
-      <button class="main-btn" onclick="startGame()">REINICIAR</button>
-    </div>
+  <div class="badge">Fase: <strong>${phase}</strong></div>
+  <div class="badge">Duelo: <strong>${duel}</strong> de <strong>${totalDuels}</strong></div>
+
+  ${undoAvailable && lastState ? `
+    <button class="main-btn secondary-btn" onclick="undoMove()">VOLTAR</button>
+  ` : ""}
+
+  <button class="main-btn" onclick="startGame()">REINICIAR</button>
+</div>
 
     <div class="battle-grid">
       <div class="card">
@@ -1303,10 +1310,18 @@ function startGame() {
     finalWinner: null
   };
 
+undoAvailable = true;
+lastState = null;
+  
   render();
 }
 
 async function chooseTrack(winner) {
+  lastState = {
+  currentRound: [...currentRound],
+  nextRound: [...nextRound],
+  currentIndex: currentIndex
+};
   nextRound.push(winner);
   currentIndex += 2;
 
@@ -1417,6 +1432,18 @@ async function shareChampion() {
   link.href = dataUrl;
   link.download = "soundclash-campeao.png";
   link.click();
+}
+function undoMove() {
+  if (!undoAvailable || !lastState) return;
+
+  currentRound = [...lastState.currentRound];
+  nextRound = [...lastState.nextRound];
+  currentIndex = lastState.currentIndex;
+
+  undoAvailable = false;
+  lastState = null;
+
+  render();
 }
 
 render();
