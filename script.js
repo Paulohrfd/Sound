@@ -48,7 +48,6 @@ const tracks = [
     mode: "brazil"
   },
   {
-  {
   title: "Toosie Slide",
   artist: "Drake",
   embed: "https://open.spotify.com/embed/track/127QTOFJsJQp5LbJbu3A1y",
