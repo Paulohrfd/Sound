@@ -1446,7 +1446,7 @@ function undoMove() {
   render();
 }
 
-render();
+
 
 
 
