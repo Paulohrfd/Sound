@@ -1388,14 +1388,28 @@ async function generateChampionImage() {
   return canvas.toDataURL("image/png");
 }
 
-async function downloadChampionImage() {
-  const dataUrl = await generateChampionImage();
-  if (!dataUrl || !champion) return;
+async function generateChampionImage() {
+  const card = document.querySelector(".share-card");
+  if (!card || typeof html2canvas === "undefined") {
+    alert("Erro ao gerar imagem.");
+    return null;
+  }
 
-  const link = document.createElement("a");
-  link.href = dataUrl;
-  link.download = `soundclash-${champion.title}.png`;
-  link.click();
+  card.classList.add("export-mode");
+
+  const canvas = await html2canvas(card, {
+    backgroundColor: null,
+    scale: 2,
+    useCORS: true,
+    scrollX: 0,
+    scrollY: -window.scrollY,
+    windowWidth: 1200
+  });
+
+  card.classList.remove("export-mode");
+
+  return canvas.toDataURL("image/png");
+}
 }
 
 async function shareChampion() {
