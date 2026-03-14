@@ -995,9 +995,10 @@ let finalsHistory = {
   quarterWinners: [],
   semiWinners: [],
   finalWinner: null
+};
+
 let undoAvailable = true;
 let lastState = null;
-};
 
 function shuffle(array) {
   const cloned = [...array];
@@ -1248,28 +1249,7 @@ function renderBattleScreen() {
       </div>
     </div>
   `;
-}
 
-      <div class="vs">VS</div>
-
-      <div class="card">
-        <h2>${right.title}</h2>
-        <p>${right.artist}</p>
-
-        <div class="player">
-          <iframe
-            src="${right.embed}"
-            width="100%"
-            height="120"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
-      </div>
-    </div>
-  `;
 }
 
 function render() {
@@ -1465,7 +1445,7 @@ function undoMove() {
   render();
 }
 
-
+render();
 
 
 
