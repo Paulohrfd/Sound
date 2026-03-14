@@ -584,4 +584,32 @@ iframe {
 .champion-name{
   transform: scale(1.03);
 }
+.bracket-pair{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  align-items: center;
+}
 
+.bracket-pair::after{
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: rgba(255,255,255,0.18);
+}
+
+.semi-col .bracket-pair::before,
+.final-col .bracket-pair::before{
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  width: 18px;
+  height: 2px;
+  background: rgba(255,255,255,0.18);
+}
