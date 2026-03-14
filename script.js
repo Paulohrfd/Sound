@@ -1228,6 +1228,9 @@ function renderBattleScreen() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
+          <p class="spotify-note">
+  Ouça a música completa conectando sua conta Spotify.
+</p>
         </div>
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
@@ -1247,6 +1250,9 @@ function renderBattleScreen() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
+          <p class="spotify-note">
+  Ouça a música completa conectando sua conta Spotify.
+</p>
         </div>
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
