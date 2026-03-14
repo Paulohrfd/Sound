@@ -1102,29 +1102,20 @@ function renderStartScreen() {
       <div class="hero-glow"></div>
 
       <img src="logo.png" class="logo">
+
       <p class="hero-subtitle">
-        Qual música é a melhor? Decida duelo por duelo. 
+        Qual música é a melhor? Decida duelo por duelo.
       </p>
 
-      <button class="main-btn hero-btn" onclick="startGame()">COMEÇAR</button>
+      <div class="mode-buttons">
+        <button class="main-btn hero-btn" onclick="startGame('general')">MODO GERAL 🎶</button>
+        <button class="main-btn hero-btn" onclick="startGame('international')">MODO INTERNACIONAL 🌎</button>
+        <button class="main-btn hero-btn" onclick="startGame('brazil')">MODO BRASILEIRO 🇧🇷</button>
+      </div>
 
       <div class="home-ranking-wrap">
         ${renderRankingBlock()}
       </div>
-    </div>
-  `;
-}
-
-function renderLoadingScreen() {
-  return `
-    <div class="start-screen hero-screen">
-      <div class="hero-glow"></div>
-
-      <img src="logo.png" class="logo">
-
-      <p class="winner-title">
-        ${loadingText || "Carregando..."}
-      </p>
     </div>
   `;
 }
@@ -1297,8 +1288,39 @@ function setLoading(text, delay = 900) {
   });
 }
 
-function startGame() {
-  const shuffled = uniqueTracks(shuffle(tracks));
+function startGame(mode = 'general') {
+  let selectedTracks = tracks;
+
+  if (mode === 'brazil') {
+    selectedTracks = tracks.filter(track => track.mode === 'brazil');
+  } else if (mode === 'international') {
+    selectedTracks = tracks.filter(track => track.mode === 'international');
+  }
+
+  const shuffled = uniqueTracks(shuffle(selectedTracks));
+  const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
+
+  started = true;
+  currentRound = shuffled.slice(0, bracketSize);
+  nextRound = [];
+  currentIndex = 0;
+  champion = null;
+  loadingPhase = false;
+  loadingText = "";
+  finalsHistory = {
+    quarter: [],
+    semi: [],
+    final: [],
+    quarterWinners: [],
+    semiWinners: [],
+    finalWinner: null
+  };
+
+  undoAvailable = true;
+  lastState = null;
+
+  render();
+}
   const bracketSize = 2 ** Math.floor(Math.log2(shuffled.length));
 
   started = true;
