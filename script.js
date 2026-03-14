@@ -1442,7 +1442,7 @@ async function shareChampion() {
   link.download = "soundclash-campeao.png";
   link.click();
 }
-
+ 
 function undoMove() {
   if (!undoAvailable || !lastState) return;
 
