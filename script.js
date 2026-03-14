@@ -1117,9 +1117,14 @@ function renderStartScreen() {
 
 function renderLoadingScreen() {
   return `
-    <div class="start-screen">
-      <h1 class="site-title">SoundClash</h1>
-      <p class="winner-title">${loadingText || "Carregando..."}</p>
+    <div class="start-screen hero-screen">
+      <div class="hero-glow"></div>
+
+      <img src="logo.png" class="logo">
+
+      <p class="winner-title">
+        ${loadingText || "Carregando..."}
+      </p>
     </div>
   `;
 }
