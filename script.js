@@ -1102,6 +1102,9 @@ function renderStartScreen() {
       <div class="hero-glow"></div>
 
       <img src="logo.png" class="logo">
+      <p class="hero-subtitle">
+Qual música é melhor? Decida duelo por duelo.
+</p>
 
       <button class="main-btn hero-btn" onclick="startGame()">COMEÇAR</button>
 
