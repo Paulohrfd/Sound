@@ -976,7 +976,7 @@ const roundNames = {
   8: "Quartas de final",
   4: "Semifinal",
   2: "Final",
-  1: "Campeã"
+  1: "Campeão"
 };
 
 const STORAGE_KEY = "soundclash_champions_v1";
@@ -1008,7 +1008,6 @@ function shuffle(array) {
   }
   return cloned;
 }
-
 
 function uniqueTracks(list) {
   const seen = new Set();
@@ -1049,7 +1048,6 @@ function saveChampion(track) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
 
-
 function getRanking(limit = 5) {
   const data = loadChampions();
 
@@ -1083,7 +1081,7 @@ function renderRankingBlock() {
       `
         )
         .join("")
-    : `<li class="ranking-empty">Ainda não há campeões registradas.</li>`;
+    : `<li class="ranking-empty">Ainda não há campeões registrados.</li>`;
 
   return `
     <div class="ranking-box">
@@ -1105,8 +1103,8 @@ function renderStartScreen() {
 
       <img src="logo.png" class="logo">
       <p class="hero-subtitle">
-Qual música é a melhor? Decida duelo por duelo. 
-</p>
+        Qual música é a melhor? Decida duelo por duelo.
+      </p>
 
       <button class="main-btn hero-btn" onclick="startGame()">COMEÇAR</button>
 
@@ -1125,6 +1123,7 @@ function renderLoadingScreen() {
     </div>
   `;
 }
+
 function renderBracketPairs(list, winners = []) {
   if (!list || !list.length) return "";
 
@@ -1157,33 +1156,33 @@ function renderWinnerScreen() {
       <p class="winner-artist">${champion.artist}</p>
 
       <div class="share-card">
-  <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
+        <p class="share-kicker">MINHA COPA NO SOUNDCLASH</p>
 
-  <div class="bracket-board">
-    <div class="bracket-col quarter-col">
-      <h4>Quartas</h4>
-      ${renderBracketPairs(finalsHistory.quarter, finalsHistory.quarterWinners)}
-    </div>
+        <div class="bracket-board">
+          <div class="bracket-col quarter-col">
+            <h4>Quartas</h4>
+            ${renderBracketPairs(finalsHistory.quarter, finalsHistory.quarterWinners)}
+          </div>
 
-    <div class="bracket-col semi-col">
-      <h4>Semifinal</h4>
-      ${renderBracketPairs(finalsHistory.semi, finalsHistory.semiWinners)}
-    </div>
+          <div class="bracket-col semi-col">
+            <h4>Semifinal</h4>
+            ${renderBracketPairs(finalsHistory.semi, finalsHistory.semiWinners)}
+          </div>
 
-    <div class="bracket-col final-col">
-      <h4>Final</h4>
-      ${renderBracketPairs(finalsHistory.final, finalsHistory.finalWinner ? [finalsHistory.finalWinner] : [])}
-    </div>
+          <div class="bracket-col final-col">
+            <h4>Final</h4>
+            ${renderBracketPairs(finalsHistory.final, finalsHistory.finalWinner ? [finalsHistory.finalWinner] : [])}
+          </div>
 
-    <div class="bracket-col champion-col">
-      <h4>🏆 Campeão</h4>
-      <div class="champion-name">${champion.title}</div>
-      <div class="champion-artist">${champion.artist}</div>
-    </div>
-  </div>
+          <div class="bracket-col champion-col">
+            <h4>🏆 Campeão</h4>
+            <div class="champion-name">${champion.title}</div>
+            <div class="champion-artist">${champion.artist}</div>
+          </div>
+        </div>
 
-  <p class="share-footer">soundclash</p>
-</div>
+        <p class="share-footer">soundclash</p>
+      </div>
 
       <div class="winner-actions">
         <button class="main-btn" onclick="shareChampion()">COMPARTILHAR RESULTADO</button>
@@ -1249,7 +1248,6 @@ function renderBattleScreen() {
       </div>
     </div>
   `;
-
 }
 
 function render() {
@@ -1371,17 +1369,16 @@ async function chooseTrack(winner) {
   }, 900);
 }
 
-
 function chooseTrackByIndex(index) {
   chooseTrack(currentRound[index]);
-} 
+}
 
 async function generateChampionImage() {
   const card = document.querySelector(".share-card");
- if (typeof html2canvas === "undefined") {
-  alert("Erro ao gerar imagem.");
-  return null;
-}
+  if (typeof html2canvas === "undefined") {
+    alert("Erro ao gerar imagem.");
+    return null;
+  }
 
   const canvas = await html2canvas(card, {
     backgroundColor: null,
@@ -1414,7 +1411,7 @@ async function shareChampion() {
 
   const response = await fetch(dataUrl);
   const blob = await response.blob();
-  const file = new File([blob], "soundclasho-campea.png", { type: "image/png" });
+  const file = new File([blob], "soundclash-campeao.png", { type: "image/png" });
 
   if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
     navigator
@@ -1432,6 +1429,7 @@ async function shareChampion() {
   link.download = "soundclash-campeao.png";
   link.click();
 }
+
 function undoMove() {
   if (!undoAvailable || !lastState) return;
 
@@ -1446,6 +1444,3 @@ function undoMove() {
 }
 
 render();
-
-
-
