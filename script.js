@@ -9,6 +9,7 @@ const tracks = [
     title: "Look At Me!",
     artist: "XXXTENTACION",
     embed: "https://open.spotify.com/embed/track/7floNISpH8VF4z4459Qo18"
+    mode: "internacional"
   },
   {
     title: "Toosie Slide",
