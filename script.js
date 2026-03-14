@@ -14,9 +14,16 @@ const tracks = [
   {
     title: "Anna Júlia",
     artist: "Los Hermanos",
-    embed: "https://open.spotify.com/track/0aASUtDb1N96NJDwmWj5Gf?si=i4o1_f6QTb60VdLwtJOYOg",
+    embed: "https://open.spotify.com/embed/track/0aASUtDb1N96NJDwmWj5Gf?si=i4o1_f6QTb60VdLwtJOYOg",
     mode: "brazil"
   },
+  {
+    title: "Só Os Loucos Sabem",
+    artist: "Charlie Brown Jr.",
+    embed: "https://open.spotify.com/embed/track/3nI0piSOxAik2RCpHGloB7?si=8HL0KKwHS46KuLMqIjdaVg",
+    mode: "brazil"
+  },
+  {
   {
   title: "Toosie Slide",
   artist: "Drake",
