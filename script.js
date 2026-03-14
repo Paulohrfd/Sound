@@ -1131,21 +1131,17 @@ function renderWinnerScreen() {
   <div class="bracket-board">
     <div class="bracket-col quarter-col">
       <h4>Quartas</h4>
-      <div class="bracket-match">${finalsHistory.quarter[0]?.title || ""}</div>
-      <div class="bracket-match">${finalsHistory.quarter[1]?.title || ""}</div>
-      <div class="bracket-match">${finalsHistory.quarter[2]?.title || ""}</div>
-      <div class="bracket-match">${finalsHistory.quarter[3]?.title || ""}</div>
+      ${renderBracketPairs(finalsHistory.quarter)}
     </div>
 
     <div class="bracket-col semi-col">
       <h4>Semifinal</h4>
-      <div class="bracket-match">${finalsHistory.semi[0]?.title || ""}</div>
-      <div class="bracket-match">${finalsHistory.semi[1]?.title || ""}</div>
+      ${renderBracketPairs(finalsHistory.semi)}
     </div>
 
     <div class="bracket-col final-col">
       <h4>Final</h4>
-      <div class="bracket-match">${finalsHistory.final[0]?.title || ""}</div>
+      ${renderBracketPairs(finalsHistory.final)}
     </div>
 
     <div class="bracket-col champion-col">
@@ -1300,29 +1296,16 @@ async function chooseTrack(winner) {
   }
 
   if (currentRound.length === 8) {
-    finalsHistory.quarter = [...nextRound];
-  }
+  finalsHistory.quarter = [...currentRound];
+}
 
-  if (currentRound.length === 4) {
-    finalsHistory.semi = [...nextRound];
-  }
+if (currentRound.length === 4) {
+  finalsHistory.semi = [...currentRound];
+}
 
-  if (currentRound.length === 2) {
-    finalsHistory.final = [...nextRound];
-  }
-
-  if (nextRound.length === 1) {
-    champion = nextRound[0];
-    saveChampion(champion);
-    render();
-    return;
-  }
-
-  if (nextRound.length <= 64) {
-    currentRound = shuffle([...nextRound]);
-  } else {
-    currentRound = [...nextRound];
-  }
+if (currentRound.length === 2) {
+  finalsHistory.final = [...currentRound];
+}
 
   nextRound = [];
   currentIndex = 0;
