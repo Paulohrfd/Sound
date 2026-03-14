@@ -741,3 +741,49 @@ iframe {
     0 20px 48px rgba(0,0,0,0.30),
     0 0 40px rgba(123,77,255,0.10);
 }
+/* modo de exportação da imagem */
+.share-card.export-mode {
+  max-width: 1180px !important;
+  width: 1180px !important;
+  padding: 26px 40px 28px !important;
+  overflow: visible !important;
+}
+
+.share-card.export-mode .bracket-board {
+  gap: 56px !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+.share-card.export-mode .quarter-col {
+  flex: 0 0 260px !important;
+  min-width: 260px !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+
+.share-card.export-mode .semi-col {
+  flex: 0 0 220px !important;
+  min-width: 220px !important;
+  margin-top: 130px !important;
+  margin-left: 0 !important;
+}
+
+.share-card.export-mode .final-col {
+  flex: 0 0 200px !important;
+  min-width: 200px !important;
+  margin-top: 280px !important;
+  margin-left: 0 !important;
+}
+
+.share-card.export-mode .champion-col {
+  flex: 0 0 220px !important;
+  min-width: 220px !important;
+  margin-top: 280px !important;
+  margin-left: 0 !important;
+}
+
+.share-card.export-mode .champion-name {
+  max-width: 220px !important;
+  font-size: 22px !important;
+}
