@@ -1,4 +1,4 @@
-* {
+* { 
   box-sizing: border-box;
 }
 
@@ -908,6 +908,35 @@ iframe {
   opacity: 0.65;
   margin-top: 6px;
   text-align: center;
+}
+@media (max-width:600px){
+
+  body{
+    font-size:13px;
+  }
+
+  .card{
+    padding:14px;
+  }
+
+  .card h2{
+    font-size:18px;
+  }
+
+  .choice-btn{
+    padding:10px;
+    font-size:13px;
+  }
+
+  .battle-grid{
+    gap:14px;
+  }
+
+  iframe{
+    height:80px;
+  }
+
+
 }
 .site-logo {
   margin-top: 40px;
