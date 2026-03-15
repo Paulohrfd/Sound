@@ -12,6 +12,12 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Papo de Agustinho",
+    artist: "Oruam e Mainstreet",
+    embed: "https://open.spotify.com/embed/track/5cCwZJUf8QiCQGnyakhpmF",
+    mode: "brazil"
+  },
+  {
     title: "Te Assumi Pro Brasil - Ao Vivo",
     artist: "Matheus & Kauan",
     embed: "https://open.spotify.com/embed/track/6P7Uodyh8g40Nyc3no6R8E",
