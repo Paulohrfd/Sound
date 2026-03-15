@@ -422,7 +422,7 @@ const tracks = [
   {
     title: "MTG NA IMAGINAÇÃO",
     artist: "DJ Topo e Mc Livinho",
-    embed: "https://open.spotify.com/embed/track/28x49WEQBd3yYK6C4OU2Os",
+    embed: "https://open.spotify.com/embed/track/4jUZymsR3lkia9wkP0o9cX",
     mode: "brazil"
   },
   {
@@ -2302,7 +2302,7 @@ function renderBattleScreen() {
           <iframe
             src="${left.embed}"
             width="100%"
-            height="180"
+            height="120"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
@@ -2325,7 +2325,7 @@ function renderBattleScreen() {
           <iframe
             src="${right.embed}"
             width="100%"
-            height="180"
+            height="120"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy">
           </iframe>
@@ -2336,6 +2336,10 @@ function renderBattleScreen() {
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
       </div>
+    </div>
+
+    <div class="site-logo">
+      <img src="logo.png" alt="SoundClash">
     </div>
   `;
 }
