@@ -2202,6 +2202,3 @@ function handleRoute() {
 }
 
 handleRoute();
-
-
-
