@@ -1923,14 +1923,15 @@ function renderBattleScreen() {
             loading="lazy">
           </iframe>
           <p class="spotify-note">
-  Ouça a música completa entrando no Spotify. 
-</p>
+            Ouça a música completa entrando no Spotify.
+          </p>
         </div>
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex})">ESCOLHER</button>
       </div>
 
-      <div class="vs">VS</div>
+      <div class="vs desktop-vs">VS</div>
+      <div class="vs-mobile">VS</div>
 
       <div class="card">
         <h2>${right.title}</h2>
@@ -1945,8 +1946,8 @@ function renderBattleScreen() {
             loading="lazy">
           </iframe>
           <p class="spotify-note">
-  Ouça a música completa entrando no Spotify. 
-</p>
+            Ouça a música completa entrando no Spotify.
+          </p>
         </div>
 
         <button class="choice-btn" onclick="chooseTrackByIndex(${currentIndex + 1})">ESCOLHER</button>
