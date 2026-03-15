@@ -12,6 +12,12 @@ const tracks = [
     mode: "brazil"
   },
   {
+    title: "Muleque De Vila",
+    artist: "Projota",
+    embed: "https://open.spotify.com/embed/track/4d2sSjYgtVjaUPxyM1tetN",
+    mode: "brazil"
+  },
+  {
     title: "Impressionando Os Anjos - ao vivo",
     artist: "Gustavo Mioto",
     embed: "https://open.spotify.com/embed/track/3v4l0SvxjTk9IjiVLhXiKA",
