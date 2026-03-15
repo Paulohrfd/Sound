@@ -6,33 +6,39 @@ const tracks = [
     mode: "brazil"
   },
   {
-    title: "Mina do Condomínio",
-    artist: "Seu Jorge",
-    embed: "https://open.spotify.com/embed/track/3QA7VF91ehKfoYEDa5wcJb",
+    title: "Será",
+    artist: "Legião Urbano",
+    embed: "https://open.spotify.com/embed/track/7hkQhMFq4EOTYwX3I7cgmA",
+    mode: "brazil"
+  },
+  {
+    title: "Malandragem",
+    artist: "Cássia Eller",
+    embed: "https://open.spotify.com/embed/track/2Ktn7Hg3jocizpfzYJKLty",
     mode: "brazil"
   },
   {
     title: "Metamorfose Ambulante",
     artist: "Raul Seixas",
-    embed: "https://open.spotify.com/embed/track/2Yk0HvfTaijA47aM0Fj88u?si=q2CumYlgSbmTXIjmJ0VdKQ",
+    embed: "https://open.spotify.com/embed/track/2Yk0HvfTaijA47aM0Fj88u",
     mode: "brazil"
   },
 {
     title: "Tempo Perdido",
     artist: "Legião Urbano",
-    embed: "https://open.spotify.com/embed/track/7MnT7msJZg3XBAS0OTfGrB?si=gpALcNHpSEC8moX-rB4D-w",
+    embed: "https://open.spotify.com/embed/track/7MnT7msJZg3XBAS0OTfGrB",
+    mode: "brazil"
+  },
+{
+    title: "Anjos (Pra quem tem fé)",
+    artist: "O Rappa",
+    embed: "https://open.spotify.com/embed/track/1UvWx2hgpxlF7HPbwLSmIY",
     mode: "brazil"
   },
 {
     title: "Não quero dinheiro",
     artist: "Tim Maia",
-    embed: "https://open.spotify.com/embed/track/0SfcG65T1KKCj5NQffpzQR?si=HX4jMW78QS28NLJV_MOgGg",
-    mode: "brazil"
-  },
-{
-    title: "Não quero dinheiro",
-    artist: "Tim Maia",
-    embed: "https://open.spotify.com/embed/track/0SfcG65T1KKCj5NQffpzQR?si=HX4jMW78QS28NLJV_MOgGg",
+    embed: "https://open.spotify.com/embed/track/0SfcG65T1KKCj5NQffpzQR",
     mode: "brazil"
   },
   {
@@ -44,13 +50,13 @@ const tracks = [
   {
     title: "Anna Júlia",
     artist: "Los Hermanos",
-    embed: "https://open.spotify.com/embed/track/0aASUtDb1N96NJDwmWj5Gf?si=i4o1_f6QTb60VdLwtJOYOg",
+    embed: "https://open.spotify.com/embed/track/0aASUtDb1N96NJDwmWj5Gf",
     mode: "brazil"
   },
   {
     title: "Só Os Loucos Sabem",
     artist: "Charlie Brown Jr.",
-    embed: "https://open.spotify.com/embed/track/3nI0piSOxAik2RCpHGloB7?si=8HL0KKwHS46KuLMqIjdaVg",
+    embed: "https://open.spotify.com/embed/track/3nI0piSOxAik2RCpHGloB7?",
     mode: "brazil"
   },
   {
